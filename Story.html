@@ -1,0 +1,87 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style story.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+    <div class="navbar">
+        <img src="logo.jpg" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Story.html">Story</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Musikalisasi Girls Story</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="Quotes.jpeg" width="100%">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="girls.jpeg" width="90%">
+                        <img src="play2.png" class="play-btn"
+                        onclick="window.location.href = 'https://youtu.be/lX_pJJZqtHA'">
+                    </div>
+                    <p>Relationship chat (cinta berkelas)<br>Jika merindukan mu salah,apa berarti mencintaimu juga salah?</p>
+                </div>
+                <div class="col">
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="girls.jpeg" width="90%">
+                            <img src="play2.png" class="play-btn"
+                            onclick="window.location.href = 'https://youtu.be/eb_mvcPUDpw'">
+                        </div>
+                        <p>Relationship chat (Catatan kecil)<br>Dari aku, penghuni istiqlal<br>Untuk kamu, Penghuni katerdal</p>
+                    </div>
+                    <div class="col">
+                        <div class="small-img-row">
+                            <div class="small-img">
+                                <img src="girls.jpeg" width="90%">
+                                <img src="play2.png" class="play-btn"
+                                onclick="window.location.href = 'https://youtu.be/op2PaYGzidA'">
+                            </div>
+                            <p>Relationship chat (BadBoy)<br>Kalau berani menetap, menetaplah selamanya.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="cinta berkelas.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" 
+        onclick="stopVideo()">
+    </div>
+    </div>
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+
+    function stopVideo(){
+        
+        videoPlayer.style.display = "none";
+
+    }
+
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+
+</script>
+<div class="footer">
+    <p class="Author">Reserved by Clarisa Chyntya Ayu Arum Ambarwati</p>
+    <p class="gamelab">Powered by<a href="https://www.gamelab.id/"target="_blank"> GameLab.id</a></p>
+</div>
+</div>
+</div>
+</body>
+</html>
